@@ -1,0 +1,53 @@
+.row{
+  background-color: white;
+  padding-top: 40px;
+  padding-bottom: 50px;
+  }
+
+  .button{
+    background-color: #3B77D0;
+    border-radius: 1px;
+    width: 200px;
+  }
+
+  .button:hover{
+    background-color: #333;
+    color: #66c2ff;
+    border-radius: 5px;
+  }
+
+.ul{
+  font-size: large;
+  list-style-type: none;
+  padding: 0px;
+}
+.ul span{
+  color: #3B77D0;
+}
+.card
+{
+background-color: white;
+color: black;
+border-style: none;
+}
+
+.vault{
+  color: #3B77D0;
+}
+.header-text{
+margin-top: 0;
+font-size: 20px;
+}
+
+.header-text h1{
+  font-size: 40px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.color{
+  color:yellowgreen;
+}
+
+.mainbanner{
+  height: 500px;
+}

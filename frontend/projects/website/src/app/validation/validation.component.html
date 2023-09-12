@@ -1,0 +1,17 @@
+<div *ngIf="error">
+  <span *ngIf="error.required"  class="text-danger">
+   {{controlName}} is required
+  </span>
+  <span *ngIf="error.maxlength "  class="text-danger">
+    {{controlName}} exceeds max length
+   </span>
+
+   <span *ngIf="error.minlength " class="text-danger">
+    {{controlName}} length in small
+   </span>
+   <span *ngIf="error.email " class="text-danger">
+    {{controlName}} is incorrect
+   </span>
+
+</div>
+

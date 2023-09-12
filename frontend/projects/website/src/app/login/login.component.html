@@ -1,0 +1,29 @@
+
+<div class="row">
+  <div class="col-sm-12">
+<div class="container col-sm-12 d-flex" >
+  <div class="box">
+  <form (ngSubmit)="Login()">
+    <div class="form-group ">
+      <h1 class="d-flex justify-content-center">Login</h1>
+      <br>
+      <label for="exampleInputEmail1">Email</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+         [ngModelOptions]="{standalone:true}"[(ngModel)]="user.email" required>
+    </div>
+    <br>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Password</label>
+      <input type="password" class="form-control" id="exampleInputPassword1"
+       [ngModelOptions]="{standalone:true}" [(ngModel)]="user.password" required>
+    </div>
+    <br>
+   <div class="d-flex justify-content-center">
+    <button type="submit" class="btn btn-primary d-flex justify-content-center">Sign In</button>
+   </div>
+   <div *ngIf="errorMessage" class="error-message">{{ errorMessage }}</div>
+  </form>
+  </div>
+</div>
+</div>
+</div>

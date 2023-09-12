@@ -1,0 +1,64 @@
+<div class="container">
+<form  [formGroup]="myForm" class=" border border-dark p-3 rounded needs-validation" (ngSubmit)="submit()">
+  <div class="row">
+    <div class="col text-center p-2 mb-2 rounded">
+      <h4>REGISTER HERE</h4>
+    </div>
+    <div class="row g-1">
+      <div class=" form-group col mb-3">
+        <label for="firstname" class="form-label" >First Name</label>
+       <input type="text" id="firstname" class="form-control" formControlName="firstname" [ngClass]="hasError('email')?'is-invalid':''">
+       <div class="invalid-feedback">
+        Please provide a valid First Name.
+      </div>
+      </div>
+      <div class=" form-group col mb-3">
+        <label for="lastname" class="form-label" >Last Name</label>
+       <input type="text"  id="lastname"  class="form-control " formControlName="lastname" [ngClass]="hasError('email')?'is-invalid':''">
+       <div class="invalid-feedback">
+        Please provide a valid Last Name.
+      </div>
+      </div>
+    </div>
+    <div class="row g-0">
+      <div class=" form-group has-validation col mb-3">
+        <label for="email" class="form-label" >Email</label>
+       <input  type="email"id="email"  class="form-control" formControlName="email" [ngClass]="hasError('email')?'is-invalid':''">
+       <div class="invalid-feedback">
+        Please provide a valid Email.
+      </div>
+      </div>
+    </div>
+    <div class="row g-1">
+      <div class=" form-group col mb-3">
+        <label for="mobile" class="form-label" >Mobile Number</label>
+       <input type="text" id="mobile"  class="form-control" formControlName="mobilenumber" [ngClass]="hasError('email')?'is-invalid':''">
+       <div class="invalid-feedback">
+        Please provide a valid Mobile Number.
+      </div>
+      </div>
+    </div>
+    <div class="row g-1">
+      <div class=" form-group col mb-3">
+        <label for="passowrd" class="form-label" >Password</label>
+        <input type="password"  id="pwd"   class="form-control" formControlName="password" [ngClass]="hasError('email')?'is-invalid':''">
+        <div class="invalid-feedback">
+          Please provide a valid Password.
+        </div>
+      </div>
+    </div>
+    <div class="row" g-0 p-0>
+    <div class="col-6 offset-3">
+      <div class="d-grid">
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </div>
+    </div>
+    <div class="row g-1">
+      <div class="col mb-3" class="text-center">
+       <span>Already a User?</span><a routerLink="/login">Login Here</a>
+      </div>
+    </div>
+    </div>
+  </div>
+</form>
+</div>

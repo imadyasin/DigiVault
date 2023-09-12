@@ -1,0 +1,16 @@
+form{
+  width: 500px;
+  background-color: white;
+}
+
+.container{
+ padding-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.col h4{
+  color: #3B77D0;
+}
